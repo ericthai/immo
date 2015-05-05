@@ -1,0 +1,1045 @@
+/*
+Texte rouge = E20000
+Texte Bleu = 1993D1
+Texte vert = 57AA0E
+*/
+
+body {
+	background-color: #FFFFFF;	
+	background: url(../images/FondAccueil.jpg) no-repeat center;
+}
+
+h1{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 20px;
+}
+
+ h1.immoneuf{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 30px;
+}}
+
+.titreRouge{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.menu{
+	background-image: url(../images/barreMenu.png); 
+	height:48px; 
+	width:950px; 
+	background-repeat:no-repeat;
+}
+
+.texteMenu{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.texteHeader{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/*Texte sous logo*/
+.textLogo{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.titrePage{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.textePage{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 16px;
+}
+
+
+/* Stop aux commissions... */
+.titrePartieEstimation{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+/* Pourquoi choisir */
+.titrePartieEstimation1{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* Elan Immo */
+.titrePartieEstimation2{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+/* Gratuitement */
+.titrePartieEstimation3{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.blocEstimation{
+	background-image: url(../images/FondEstimation.jpg); 
+	height:265; 
+	width:350; 
+	background-repeat:no-repeat;	
+}
+
+.blocEstimationLabel{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 13px;
+}
+.titreblocEstimation{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.titreblocEstimation1{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.textePartieEstimation{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.texteListeRuesReferencees{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.titrePartieEstimationVente{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.textePartieEstimationVente{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.blocSelection{
+	background-image: url(../images/bandeSelection.png); 
+	height:282; 
+	width:950; 
+	background-repeat:no-repeat;	
+}
+.blocSelectionTitre{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.blocSelectionTitreAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.blocSelectionPrixAnnonce{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.blocSelectionTitreRouge{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.blocRecherche{
+	background-image: url(../images/blocRecherche.png); 
+	height:193; 
+	width:650; 
+	:no-repeat;	
+}
+.blocMoteurRecherche{
+	background-image: url(../images/blocMoteurRecherche.png); 
+	height:193; 
+	width:730; 
+	background-repeat:no-repeat;	
+}
+
+
+.blocRechercheTitre{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.blocRechercheTitreLabel{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.blocEspaceCompte{
+	height:247; 
+	width:539; 
+}
+.blocEspaceCompteTitre{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.blocCompteLabel{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+.blocCompteLabel1{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.encartDroit{
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.blocFooterLabel{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.blocFooterTexte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+}
+.blocResultaEstimationTexte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.listeAppMaiTitreResultat{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 16px;
+	background-color: #FFFFFF;	
+	font-weight: bold;
+}
+
+.listeAppMaiTitreNbResultat{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.listeBienVendus{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.estimationBiensVendus{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.listeAppMaiTitreAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.listeAppMaiPrixAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+.listeAppMaiDescriptionAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.titreDetailAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.prixDetailAnnonce{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.labelDetailAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.label12DetailAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.texteDetailAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+}
+.texte12DetailAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.texteVertDetailAnnonce{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.titreEstimation14bold{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.texteEstimation11{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.achatBienBlocInfoTexte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.achatBienBlocInfoTitre{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.titreCompte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.labelCompte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #C4C0C0;	
+}
+
+.texteCompte{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.tableauCadre{
+	border-top: 1px solid #ADACAC;
+	border-left: 1px solid #ADACAC;
+	border-right: 1px solid #ADACAC;
+	border-bottom: 1px solid #ADACAC;
+}
+
+.tableauEstimation{
+	background-color: #F3F3F3;	
+	color: #343333;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tableauEstimationLeft{
+	background-color: #F3F3F3;	
+	border-bottom-left-radius: 5px;	
+	border-top-left-radius : 5px;
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tableauEstimationRight{
+	background-color: #F3F3F3;	
+	border-bottom-right-radius: 5px;	
+	border-top-right-radius : 5px;
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tableauEstimationRouge{
+	background-color: #F3F3F3;	
+	border-radius: 1px;	
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.tableauDiv{
+	background-color: #C4C0C0;	
+	border-top: 1px solid #ADACAC;
+	border-left: 1px solid #ADACAC;
+	border-right: 1px solid #ADACAC;
+	border-bottom: 1px solid #ADACAC;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.achatBienBlocInfoTab{
+	border-top: 1px solid #ECECEC;
+	border-left: 1px solid #ECECEC;
+	border-right: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.titreEspaceAnnonce{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #D6D5D5;	
+}
+
+.titreEspaceCompteAnnonce{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.titreBlocEspaceAnnonce{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.labelEspaceAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.labelImportant{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.labelConnexionParametre{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.texteEspaceCompteAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.textePageConfirmationEstimation{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.texteEspaceComptePourEstimation{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.dpe{
+	background-image: url(../images/dpe/curseur.png); 
+	height:32; 
+	width:57; 
+	background-repeat:no-repeat;	
+}
+
+.texteDpe{
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.titre2EspaceAnnonce{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.messageErreur{
+	border-top: 1px solid #E20000;
+	border-left: 1px solid #E20000;
+	border-right: 1px solid #E20000;
+	border-bottom: 1px solid #E20000;
+}
+.texteMessageErreur{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.textePageCalcul{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.titreDroitPageResultat{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.texteBoldPageResultat{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.textePageResultat{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+}
+.labelDroitPageResultat{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.textePrixEstimePageResultat{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.texteNbAcquereursPageResultat{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.texte1NbAcquereursPageResultat{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.texteNumPageResultat{
+	color: #57AA0E;	
+	font-family: Arial;
+	font-size: 23px;
+	background-color: #FFFFFF;	
+	font-weight: bold;
+}
+
+.indicateurRouge {
+	background-color: #FFFFFF;	
+	background: url(/images/indicateurRouge.png) no-repeat center;
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	height:45; 
+	width:125; 
+}
+.indicateurVerte{
+	background-color: #FFFFFF;	
+	background: url(/images/indicateurVerte.png) no-repeat center;
+	height:45; 
+	width:125; 
+	color: #FFFFFF;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#listVille {
+	position: absolute; 
+	z-index: 4;
+}
+
+#test2 {
+	position: absolute; 
+	z-index: 2;
+	width:300px;
+	height:10px;
+	background-color: #57AA0E;	
+}
+
+.tableauGetVille{
+	border-top: 1px solid #343333;
+	border-left: 1px solid #343333;
+	border-right: 1px solid #343333;
+	border-bottom: 1px solid #343333;
+	font-family: Arial;
+	font-size: 12px;	
+	background-color: #FFFFFF;	
+	width:250px;	
+}
+
+.cellulePairGetVille{
+	font-family: Arial;
+	font-size: 12px;	
+	border: 0px solid #FFFFFF;
+	padding: 5px;
+	background-color: #FFFFFF;	
+}
+
+.celluleImpairGetVille{
+	font-family: Arial;
+	font-size: 12px;	
+	border: 0px solid #FFFFFF;
+	padding: 5px;
+	background-color: #FFFFFF;	
+}
+
+#numero1 {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:10px;
+	z-index:2;
+}
+
+.texteEncartPartenaire{
+	color: #E20000;	
+	font-family: Arial;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.input_file_style_file{
+	height:30px;
+	width:300px;
+}
+
+.titreRendezVous{
+	color: #343333;	
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.texteResultatEstimationlienPopup {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input.RendezVous{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 3px;
+}
+
+input.PageResultat{
+	font-family: Arial;
+	font-size: 14px;	
+	border: 1px solid #ccc;
+	height: 28px;
+	padding: 3px;
+}
+
+input{
+	font-family: Arial;
+	font-size: 14px;	
+	border: 1px solid #ccc;
+	height: 20px;
+	padding: 3px;
+}
+
+input.ajouterAnnononce{
+	font-family: Arial;
+	font-size: 14px;	
+	border: 1px solid #ccc;
+	height: 20px;
+	padding: 3px;
+}
+
+
+textarea.PageResultat{
+	font-family: Arial;
+	font-size: 14px;	
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+select{
+   width: 268px;
+   padding: 5px;
+   font-size: 13px;
+   border: 1px solid #ccc;
+   height: 28px;
+}
+
+
+select.RendezVous{
+	color: #1993D1;	
+	font-family: Arial;
+	font-size: 13px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+select.PageResultat{
+   width: 268px;
+   padding: 5px;
+   font-size: 13px;
+   border: 1px solid #ccc;
+   height: 30px;
+}
+
+a.nav:link {
+	color: #343333;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.nav:visited {
+	color: #343333;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a.nav:hover {
+	color: #343333;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+a.lienPopup:link {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.lienPopup:visited {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a.lienPopup:hover {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+a.detail:link {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.detail:visited {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a.detail:hover {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+a.achatBien:link {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.achatBien:visited {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a.achatBien:hover {
+	color: #1993D1;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+a.headerMenu:link {
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+a.headerMenu:visited {
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 20px;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a.headerMenu:hover {
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+a.navRouge:link {
+	color: #E20000;
+	font-family: arial;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.navRouge:visited {
+	color: #E20000;
+	font-family: arial;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.navRouge:hover {
+	color: #E20000;
+	font-family: arial;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+/*------------------POPUPS------------------------*/
+#fade {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.popup_block{
+	display: none;
+	background: #fff;
+	padding: 20px; 	
+	border: 20px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+img.btn_close {
+	float: right; 
+	margin: -55px -55px 0 0;
+}
+.popup p {
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+*html .popup_block {
+	position: absolute;
+}
+
+.post {
+	margin: 0; padding: 10px 20px;
+	float: left;
+	width: 560px;
+}
+
+.ds_box {
+	background-color: #FFF;
+	border: 1px solid #000;
+	position: absolute;
+	z-index: 32767;
+}
+
+.ds_tbl {
+	background-color: #FFF;
+}
+
+.ds_head {
+	background-color: #333;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.ds_subhead {
+	background-color: #CCC;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 32px;
+}
+
+.ds_cell {
+	background-color: #EEE;
+	color: #000;
+	font-size: 13px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.ds_cell:hover {
+	background-color: #F3F3F3;
+} /* This hover code won't work for IE */
+

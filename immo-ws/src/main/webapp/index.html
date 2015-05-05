@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html ng-app="virtualImmoApp" ng-init="showWORKSPACE='false';showFOOTER='true';showBARRE='true';showRECHERCHE='true';">
+  <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="scripts/ui-bootstrap-tpls-0.11.2.js"></script>
+        	
+
+	<link href="css/stylesV2.css" rel="stylesheet" type="text/css">
+
+
+	<script>
+		var app = angular.module("virtualImmoApp", []);
+		
+		function annoncesController($scope,$http) {
+		  $http.get("http://localhost:8080/immo/annonces")
+		  .success(function(response) {$scope.annonces = response;});
+		}	
+		
+	</script>	
+	
+  <style type="text/css">
+	.navbar-inverse {
+		background-color: #1991D0;
+		border-color: #21A6E5;	
+		background-image: linear-gradient(to bottom,#21A6E5 0,#1991D0 100%);
+	}
+  </style>
+  	
+  </head>
+  
+  
+  <body>
+  
+	<!-- DIV BARRE -->
+    <div class="container" ng-show="showBARRE">
+		<header class="row">
+			<div class="col-lg-12">
+				<h1>C mon immo.com</h1>
+				<div class="container-fluid">
+					<nav class="navbar navbar-inverse" role="navigation">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#" class="headerMenu">Accueil</a></li>
+								<li><a href="#" class="headerMenu">Estimation</a></li>
+								<li><a href="#" class="headerMenu">Achat</a></li>
+								<li><a href="#" class="headerMenu">Vente</a></li>
+								<li><a href="#" class="headerMenu">Programme neuf</a></li>	
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+	  
+	<!-- DIV RECHERCHE -->  
+    <div ng-show="showRECHERCHE">
+        <div class="col-lg-2">
+			<legend>Recherche</legend>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">CP ou Ville</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Prix mininum</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Surface minimale</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Nombre de pièces</label>
+            </aside>
+            <aside class="col-lg-12">
+				<select class="form-control">
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				</select>
+            </aside>
+          </div>
+		  <div>&nbsp;</div>
+          <div class="row">
+            <aside class="col-lg-12">
+				  <button type="button" class="btn btn-primary btn-lg btn-success" ng-click="showWORKSPACE='true'">Valider</button>
+            </aside>
+          </div>
+        </div>
+	</div>
+	
+	
+		<!-- DIV WORKSPACE-->
+
+		<div ng-show="showWORKSPACE">
+
+			<section class="col-lg-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>Elan immo</b> : 3 biens trouvés</h3>
+					</div>
+					<div class="panel-body">
+						<div ng-controller="annoncesController"> 
+							<table>
+								<tr ng-repeat="x in annonces">
+									<td>{{ x.referenceAnnonce }}</td>
+									<td>{{ x.dateCreationAnnonce }}</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!--
+        <div class="col-lg-2">
+          <div class="row">
+            <aside class="col-lg-12">
+              Aside
+            </aside>
+            <aside class="col-lg-12">
+              Aside
+            </aside>
+          </div>
+        </div>
+		-->
+
+	
+
+	
+  </body>
+  	<!-- DIV Pied de page -->
+	<div ng-show="showFOOTER">
+		<footer class="row">
+        	<div class="col-lg-12">
+         	 Pied de page
+        	</div>
+      	</footer>
+    </div>	
+</html>

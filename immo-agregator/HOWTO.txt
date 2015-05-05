@@ -1,0 +1,28 @@
+pre-requis :
+jdk 8 + JAVA_HOME configure
+maven
+eclipse luna pour developper
+wamp avec une base "immo" et un login/pwd base = immouser1/immouser1 sur la base "immo"
+
+- chaque projet "eclispe" :
+lancer avec eclipse sur les applications "Main"
+
+pour compiler avec maven :
+mvn clean compile package install 
+
+pour lancer avec maven (sauf immo-agregator): 
+mvn spring-boot:run
+
+
+- test via : 
+http://localhost:8080/immo/annonces/
+login=eric
+pwd=password
+
+config de la securite dans :
+D:\workspaces\workspace_immo4\immo-ws\src\main\java\com\virtualobject\MySecurityConfiguration.java
+
+todo : 
+- test unitaire indep
+- revoir la config
+- attention au parametrage hibernate (sinon drop de la base)

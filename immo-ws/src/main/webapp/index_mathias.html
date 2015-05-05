@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	
+	<link href="css/stylesV2.css" rel="stylesheet" type="text/css">
+	
+	
+
+	<script>	
+		function annoncesController($scope,$http) {
+		  $http.get("http://localhost:8080/annonces")
+		  .success(function(response) {$scope.annonces = response;});
+		}
+	</script>	
+	
+  <style type="text/css">
+	.navbar-inverse {
+		background-color: #1991D0;
+		border-color: #21A6E5;	
+		background-image: linear-gradient(to bottom,#21A6E5 0,#1991D0 100%);
+	}
+  </style>
+  	
+	
+  <!-- Un peu de style pour la visualisation -->
+
+		<!--
+  <style type="text/css">
+		.col-lg-12 {border:1px solid #C13622;}
+		.container {
+			border:1px solid #C13622;
+		}
+  </style>
+		-->
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="row">
+        <div class="col-lg-12">
+		<h1>C mon immo.com</h1>
+
+		
+		<nav class="navbar navbar-inverse" role="navigation">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="#" class="headerMenu">Accueil</a></li>
+				<li><a href="#" class="headerMenu">Estimation</a></li>
+				<li><a href="#" class="headerMenu">Achat</a></li>
+				<li><a href="#" class="headerMenu">Vente</a></li>
+				<li><a href="#" class="headerMenu">Programme neuf</a></li>
+<!--				
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+					<li class="divider"></li>
+					<li><a href="#">One more separated link</a></li>
+				  </ul>
+				</li>
+-->				
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+        </div>
+      </header>
+
+      <div class="row">
+
+        <div class="col-lg-2">
+			<legend>Recherche</legend>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">CP ou Ville</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Prix mininum</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Surface minimale</label>
+            </aside>
+            <aside class="col-lg-12">
+              <input class="form-control" id="inputsm" type="text">
+            </aside>
+          </div>
+          <div class="row">
+            <aside class="col-lg-12">
+				<label for="inputsm">Nombre de pièces</label>
+            </aside>
+            <aside class="col-lg-12">
+				<select class="form-control">
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				</select>
+            </aside>
+          </div>
+		  <div>&nbsp;</div>
+          <div class="row">
+            <aside class="col-lg-12">
+				  <button type="button" class="btn btn-primary btn-lg btn-success">Valider</button>
+            </aside>
+          </div>
+		  
+        </div>
+
+        <section class="col-lg-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					<h3 class="panel-title"><b>Elan immo</b> : 3 biens trouvés</h3>
+					</div>
+					<div class="panel-body">
+						<div ng-app="" ng-controller="annoncesController"> 
+
+						<table>
+						<tr ng-repeat="x in annonces">
+						<td>{{ x.titre }}</td>
+						<td>{{ x.typeAnnonce }}</td>
+						<td>{{ x.dateAnnonce }}</td>
+						</tr>
+						</table>
+						</div>
+					</div>
+				</div>
+        </section>
+
+        <div class="col-lg-2">
+          <div class="row">
+            <aside class="col-lg-12">
+              Aside
+            </aside>
+            <aside class="col-lg-12">
+              Aside
+            </aside>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="row">
+        <div class="col-lg-12">
+          Pied de page
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

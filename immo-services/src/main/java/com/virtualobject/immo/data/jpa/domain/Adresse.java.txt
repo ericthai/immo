@@ -1,0 +1,28 @@
+package com.virtualobject.immo.entity;
+
+import java.util.UUID;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//import org.springframework.data.mongodb.core.geo.Point;
+
+@Entity
+@Table(name="ADRESSE_GEO")
+public class Adresse extends AdresseImmo { //implements PointLocalizable {
+
+	//private Point localisationPoint;
+
+	public Adresse() {
+		setId(UUID.randomUUID().toString());
+	}
+
+//	public Point getLocalisationPoint() {
+//		return localisationPoint;
+//	}
+//
+//	public void setLocalisationPoint(Point localisationPoint) {
+//		this.localisationPoint = localisationPoint;
+//	}
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd)	{
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+
+<title>Page ESPACE CLIENT</title>
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	
+<script>
+function annoncesController($scope,$http) {
+  $http.get("http://localhost:8080/annonces")
+  .success(function(response) {$scope.annonces = response;});
+}
+</script>	
+</head>
+<body>
+<p>PAGE ESPACE CLIENT</p>
+<div ng-app="" ng-controller="annoncesController"> 
+
+<table>
+<tr ng-repeat="x in annonces">
+<td>{{ x.titre }}</td>
+<td>{{ x.typeAnnonce }}</td>
+<td>{{ x.dateAnnonce }}</td>
+</tr>
+</table>
+
+</body>
+</html>

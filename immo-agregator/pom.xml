@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.virtualobject.immo</groupId>
+
+    <artifactId>immo-agregator</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0</version>
+    <name>immo-agregator</name>
+    <url>http://maven.apache.org</url>
+
+    <developers>
+        <developer>
+            <id>eric_thai</id>
+            <name>Eric Thai</name>
+            <email>eric.thai.office@gmail.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architecte</role>
+            </roles>
+            <organization>veolia.com</organization>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <modules>
+		<!--
+        <module>../immo-persistence-mongodb</module>
+		-->
+		
+        <module>../immo-services</module>		
+		<module>../immo-ws</module>		
+
+    </modules>
+
+</project>
