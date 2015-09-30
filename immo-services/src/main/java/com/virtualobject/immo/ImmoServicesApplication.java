@@ -35,6 +35,7 @@ public class ImmoServicesApplication {
 	}
 
 	public static void main(String[] args) {
+		//commentaire2 a enlever du 01/10/2015
 		System.out.println(">>>ImmoServicesApplication.main()");
 		SpringApplication springApplication = new SpringApplication(
 				ImmoServicesApplication.class);
