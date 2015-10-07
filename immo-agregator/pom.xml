@@ -18,7 +18,7 @@
                 <role>Project Manager</role>
                 <role>Architecte</role>
             </roles>
-            <organization>veolia.com</organization>
+            <organization>virtualobject.com</organization>
             <timezone>+1</timezone>
         </developer>
     </developers>
@@ -30,7 +30,7 @@
 		
         <module>../immo-services</module>		
 		<module>../immo-ws</module>		
-
+		<module>../immo-web</module>	
     </modules>
 
 </project>
