@@ -1,13 +1,10 @@
 # immo
-- creation du projet immo-web pour un retour a une architecture plus classique (merci Mathias)
-utilisation de Spring MVC dans ce projet.
-Exemple simple basé sur des conventions et annotations.
 
+utiliser le projet immo-agregator pour lancer les commandes maven pour tous les projets
 
-RAF :
-immo-web : 
-    dependance vers immo-services et faire un exemple complet de CRUD
-    ne pas utiliser thymeleaf je pense car eclipse ne traque pas les changements : relance de l'application à chaque fois
+GENERER les fichiers de config pour ECLIPSE (dependances) : mvn eclipse:eclipse -Dwtpversion=1.0
+attention : il faut aller enlever les "exclude des fichiers properties" de chaque projet eclipse "java build path : source : src/main/resource qui doit être à "NONE" (faire un remove)
 
-- immo-ws : projet conservé pour gerer des web services avec des pages HTML + AngularJS
-- 
+BUILD TOTAL (livraison) : mvn clean compile package install
+
+Toutes les couches sont mises en place. Il reste à coder un exemple de bout en bout : "immo-web" appelle un service de "immo-services"
