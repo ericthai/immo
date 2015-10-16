@@ -1,5 +1,11 @@
 # immo
 
+*** DATABASE ***
+Pour generer le script SQL correspondant a la base MYSQL : 
+lancer une CMD, se placer dans "immo-services" et lancer "mvn hibernate4:export" le fichier sql se trouve dans le repertoire target.
+Lancer SQLMyAdmin se placer sur la base "immo" (ou en créer une) et importer le script (aller chercher le fichier SQL) et executer.
+
+*** MAVEN et gestion des dependances ***
 utiliser le projet immo-agregator pour lancer les commandes maven pour tous les projets
 
 GENERER les fichiers de config pour ECLIPSE (dependances) : mvn eclipse:eclipse -Dwtpversion=1.0
