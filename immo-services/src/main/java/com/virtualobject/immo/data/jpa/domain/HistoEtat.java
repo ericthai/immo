@@ -3,6 +3,7 @@ package com.virtualobject.immo.data.jpa.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -18,6 +19,7 @@ public class HistoEtat implements Serializable {
 	@GeneratedValue
 	private Long histoEtatId;
 
+	@Column(length = 60)
 	private String etat;
 	private Date dateEtat;
 	private String commentaire;

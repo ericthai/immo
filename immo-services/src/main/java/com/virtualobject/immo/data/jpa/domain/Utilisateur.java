@@ -2,6 +2,7 @@ package com.virtualobject.immo.data.jpa.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -17,7 +18,9 @@ public class Utilisateur implements Serializable {
 	@Id
 	@GeneratedValue
 	private Long utilisateurId;
+	@Column(length = 60)
 	private String typeClient;
+	@Column(length = 100)
 	private String email;
 
 	public Utilisateur() {

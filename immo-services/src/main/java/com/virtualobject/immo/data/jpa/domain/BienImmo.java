@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -22,6 +23,7 @@ public class BienImmo extends AnnonceBusinessObject implements Serializable {
 	@GeneratedValue
 	private Long bienImmoId;
 
+	@Column(length = 60)
 	private String typeBien;
 	private Float surface;
 	private Integer nbPiece;
@@ -37,6 +39,7 @@ public class BienImmo extends AnnonceBusinessObject implements Serializable {
 	private Integer parking;
 	private Boolean cave;
 	private Integer terrain;
+	@Column(length = 60)
 	private String etat;
 	private Integer prixVente;
 	private Date dateVente;

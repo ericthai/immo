@@ -1,5 +1,6 @@
 package com.virtualobject.immo.data.jpa.domain;
 
+import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 //@MappedSuperclass
@@ -10,8 +11,11 @@ public class ClientPhysique extends Client {
 	static public final String PARTICULIER = "particulier";
 	static public final String INDEPENDANT = "independant";
 
+	@Column(length = 10)
 	private String civilite;
+	@Column(length = 100)
 	private String nom;
+	@Column(length = 100)
 	private String prenom;
 
 	public ClientPhysique() {

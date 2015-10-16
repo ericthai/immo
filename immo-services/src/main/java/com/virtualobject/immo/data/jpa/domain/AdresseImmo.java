@@ -2,6 +2,7 @@ package com.virtualobject.immo.data.jpa.domain;
 
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -17,7 +18,9 @@ public class AdresseImmo {
 
 	private String adresse;
 	private Integer codePostal;
+	@Column(length = 120)
 	private String ville;
+	@Column(length = 120)
 	private String pays;
 
 	public long getAdresseImmoId() {

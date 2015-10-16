@@ -1,5 +1,6 @@
 package com.virtualobject.immo.data.jpa.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,7 +15,7 @@ public class AgenceImmo extends ClientMoral {
 	@Id
 	@GeneratedValue
 	private Long agenceImmoId;
-
+	@Column(length = 100)
 	private String nomReseauAgence;
 
 	public AgenceImmo() {

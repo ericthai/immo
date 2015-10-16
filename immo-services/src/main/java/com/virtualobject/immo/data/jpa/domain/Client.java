@@ -3,6 +3,7 @@ package com.virtualobject.immo.data.jpa.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 
@@ -11,8 +12,11 @@ public class Client extends Utilisateur {
 
 	private static final long serialVersionUID = -8727756996006797749L;
 	
+	@Column(length = 80)
 	private String login;
+	@Column(length = 20)
 	private String password;
+	@Column(length = 20)
 	private String telephone;
 	//private List<String> annonces; // liste des Id d'annonces...
 	

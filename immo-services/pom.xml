@@ -9,8 +9,14 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.2.3.RELEASE</version>
 	</parent>
+	
+	<!--
+	GENERATION du fichier SQL pour MySQL :
+	mvn hibernate4:export
+	le fichier se trouve dans target 
+	 -->
+	<groupId>com.virtualobject.immo</groupId> 
 	<artifactId>immo-services</artifactId>
-	<groupId>com.virtualobject.immo</groupId>
 	<name>immo-services</name>
 	<description>Spring Boot Data JPA Sample</description>
 	<version>0.1.0</version>

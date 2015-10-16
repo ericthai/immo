@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToMany;
 
@@ -16,9 +17,12 @@ public class Annonce implements Serializable {
 	private String annonceId;
 	private String referenceAnnonce;
 	private Date dateCreationAnnonce;
+	@Column(length = 120)
 	private String titre;
 	private String description;
+	@Column(length = 255)
 	private String remarque;
+	@Column(length = 60)
 	private String etatCourant;
 
 	@OneToMany
