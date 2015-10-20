@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToMany;
 
@@ -14,7 +16,10 @@ public class Annonce implements Serializable {
 
 	private static final long serialVersionUID = -6493653477564612327L;
 
-	private String annonceId;
+	@Id
+	@GeneratedValue
+	private Long annonceId;
+
 	private String referenceAnnonce;
 	private Date dateCreationAnnonce;
 	@Column(length = 120)
@@ -37,11 +42,11 @@ public class Annonce implements Serializable {
 		histoEtat = new ArrayList<HistoEtat>();
 	}
 
-	public String getAnnonceId() {
+	public long getAnnonceId() {
 		return annonceId;
 	}
 
-	public void setAnnonceId(String annonceId) {
+	public void setAnnonceId(long annonceId) {
 		this.annonceId = annonceId;
 	}
 

@@ -36,6 +36,10 @@ public interface AnnonceDaoService {
 
 	List<AnnonceImmo> findAll();
 	
+	AnnonceImmo getOne(Long id);
+	
+	AnnonceImmo save(AnnonceImmo annonceImmo);
+	
 	//Annonce getAnnonce(String critere);
 
 }

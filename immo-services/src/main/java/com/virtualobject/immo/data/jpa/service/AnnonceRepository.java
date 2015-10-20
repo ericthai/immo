@@ -31,6 +31,8 @@ interface AnnonceRepository extends JpaRepository<AnnonceImmo, Long> {
 	Page<AnnonceImmo> findAll(Pageable pageable);
 	
 	List<AnnonceImmo> findAll();
+	
+	AnnonceImmo getOne(Long id);
 
 //	Page<City> findByNameContainingAndCountryContainingAllIgnoringCase(String name,
 //			String country, Pageable pageable);

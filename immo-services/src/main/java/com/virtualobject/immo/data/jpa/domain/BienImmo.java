@@ -15,13 +15,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "BIENS")
-public class BienImmo extends AnnonceBusinessObject implements Serializable { 
-	
-	private static final long serialVersionUID = 3803855141876874576L;
+public class BienImmo extends AnnonceBusinessObject implements Serializable {
 
-	@Id
-	@GeneratedValue
-	private Long bienImmoId;
+	private static final long serialVersionUID = 3803855141876874576L;
 
 	@Column(length = 60)
 	private String typeBien;
@@ -228,14 +224,6 @@ public class BienImmo extends AnnonceBusinessObject implements Serializable {
 
 	public void setTerrasseM2(Integer terrasseM2) {
 		this.terrasseM2 = terrasseM2;
-	}
-
-	public long getBienImmoId() {
-		return bienImmoId;
-	}
-
-	public void setBienImmoId(long bienImmoId) {
-		this.bienImmoId = bienImmoId;
 	}
 
 	public List<PhotoBienImmo> getPhotos() {

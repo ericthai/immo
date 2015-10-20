@@ -15,22 +15,10 @@ import javax.persistence.Table;
 public class AnnonceImmo extends Annonce implements Serializable {
 
 	private static final long serialVersionUID = -4926773977993059101L;
-
-	@Id
-	@GeneratedValue
-	private Long annonceImmoId;
 	
 	private Boolean premium;
 
 	public AnnonceImmo() {
-	}
-
-	public long getAnnonceImmoId() {
-		return annonceImmoId;
-	}
-
-	public void setAnnonceImmoId(long annonceImmoId) {
-		this.annonceImmoId = annonceImmoId;
 	}
 
 	public BienImmo getBienImmo() {

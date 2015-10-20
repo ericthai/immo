@@ -23,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
+import com.virtualobject.immo.data.jpa.domain.Annonce;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
 import com.virtualobject.immo.data.jpa.service.AnnonceDaoService;
 
@@ -43,10 +44,20 @@ public class AnnonceService {
 		return annonces;
 	}
 
-//	public AnnonceImmo save(AnnonceImmo annonce) {
-//		logger.info(">>> AnnonceService.save(Annonce)");
-//		return annonceRepository.save(annonce);
-//	}
+	public Object save(Object annonce){
+		Object obj = null;
+		if (annonce instanceof AnnonceImmo){
+			obj = save((AnnonceImmo)annonce);
+		}
+		return obj;
+	}
+	
+	public AnnonceImmo getOne(long annonceId){
+		AnnonceImmo annonceImmo = annonceDaoService.getOne(annonceId);
+		return annonceImmo;
+	}
 
-
+	private AnnonceImmo save(AnnonceImmo annonceImmo){
+		return annonceDaoService.save(annonceImmo);
+	}
 }

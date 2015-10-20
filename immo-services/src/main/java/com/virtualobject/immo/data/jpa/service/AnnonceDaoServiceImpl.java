@@ -61,7 +61,13 @@ class AnnonceDaoServiceImpl implements AnnonceDaoService {
 		return annonceRepository.findAll();
 	}
 
-
+	public AnnonceImmo getOne(Long id){
+		return this.annonceRepository.getOne(id);
+	}
+	
+	public AnnonceImmo save(AnnonceImmo annonceImmo){
+		return this.annonceRepository.save(annonceImmo);
+	}
 	
 //	@Override
 //	public Page<Annonce> findCities(AnnonceSearchCriteria criteria, Pageable pageable) {
