@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 public class Annonce implements Serializable {
 
 	private static final long serialVersionUID = -6493653477564612327L;
-	
+
 	private String annonceId;
 	private String referenceAnnonce;
 	private Date dateCreationAnnonce;
@@ -35,6 +35,14 @@ public class Annonce implements Serializable {
 	public Annonce() {
 		dateCreationAnnonce = new Date();
 		histoEtat = new ArrayList<HistoEtat>();
+	}
+
+	public String getAnnonceId() {
+		return annonceId;
+	}
+
+	public void setAnnonceId(String annonceId) {
+		this.annonceId = annonceId;
 	}
 
 	public String getReferenceAnnonce() {
@@ -101,8 +109,7 @@ public class Annonce implements Serializable {
 		return annonceBusinessObject;
 	}
 
-	public void setAnnonceBusinessObject(
-			AnnonceBusinessObject annonceBusinessObject) {
+	public void setAnnonceBusinessObject(AnnonceBusinessObject annonceBusinessObject) {
 		this.annonceBusinessObject = annonceBusinessObject;
 	}
 
