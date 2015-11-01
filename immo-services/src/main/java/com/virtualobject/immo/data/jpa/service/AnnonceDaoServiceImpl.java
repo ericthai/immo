@@ -69,6 +69,10 @@ class AnnonceDaoServiceImpl implements AnnonceDaoService {
 		return this.annonceRepository.save(annonceImmo);
 	}
 	
+	public void deleteById(Long annonceId){
+		annonceRepository.delete(annonceId);
+	}
+	
 //	@Override
 //	public Page<Annonce> findCities(AnnonceSearchCriteria criteria, Pageable pageable) {
 //

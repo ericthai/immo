@@ -57,6 +57,10 @@ public class AnnonceService {
 		return annonceImmo;
 	}
 
+	public void deleteById(long annonceId){
+		annonceDaoService.deleteById(annonceId);
+	}
+	
 	private AnnonceImmo save(AnnonceImmo annonceImmo){
 		return annonceDaoService.save(annonceImmo);
 	}

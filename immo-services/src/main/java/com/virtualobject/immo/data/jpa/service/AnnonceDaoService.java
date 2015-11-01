@@ -40,6 +40,8 @@ public interface AnnonceDaoService {
 	
 	AnnonceImmo save(AnnonceImmo annonceImmo);
 	
+	void deleteById(Long id);
+	
 	//Annonce getAnnonce(String critere);
 
 }
