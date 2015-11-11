@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -46,6 +47,17 @@ public class BienImmo extends AnnonceBusinessObject implements Serializable {
 
 	@OneToMany
 	private List<PhotoBienImmo> photos;
+
+	@OneToOne
+	private AdresseImmo adresse;
+
+	public AdresseImmo getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(AdresseImmo adresse) {
+		this.adresse = adresse;
+	}
 
 	public BienImmo() {
 	}

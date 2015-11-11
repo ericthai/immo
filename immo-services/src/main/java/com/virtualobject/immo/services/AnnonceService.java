@@ -43,7 +43,13 @@ public class AnnonceService {
 		
 		return annonces;
 	}
-
+	
+	public List<AnnonceImmo> findAnnoncePremium() {
+		logger.info(">>> AnnonceService.findAnnoncePremium()");
+		return findAll();
+	}
+	
+	
 	public Object save(Object annonce){
 		Object obj = null;
 		if (annonce instanceof AnnonceImmo){
