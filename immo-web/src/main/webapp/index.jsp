@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+	<!-- Eric : edition1 from server side -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -165,7 +165,7 @@
 									Prix : ${annonce.getBienImmo().getPrix()}
 								</div>
 								<div class="description">
-									D�tail...
+									Détail...
 								</div>
 							</div>
 						</c:forEach>
@@ -313,9 +313,9 @@
 						</div>
 						<div class="row text-valign-top">
 							<div class="col-xs-6  col-sm-6 col-md-6">
-								<a href="mailto:#">Mot de passe oublié</a>
+								<a href="mailto:#">Mot de passe oubliÃ©</a>
 								<br>
-								<a href="mailto:#">Créer un compte</a>
+								<a href="mailto:#">CrÃ©er un compte</a>
 							</div>
 							<div class="col-xs-6  col-sm-6 col-md-6">
 								<button type="submit" class="btn btn-primary btn-block">Rechercher</button>
