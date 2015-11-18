@@ -4,7 +4,7 @@
 
 <head>
 
-	<!-- Eric :local -->  
+	<!-- Eric : edition server -->  
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <meta name="author" content="">
 
     <title>Ici Immo</title>
-    <!-- Eric :local2 -->
+
     <!-- Bootstrap Core CSS -->
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
