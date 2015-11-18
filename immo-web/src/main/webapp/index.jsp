@@ -11,7 +11,7 @@
     <meta name="author" content="">
 
     <title>Ici Immo</title>
-
+<!-- Eric :local2 -->
     <!-- Bootstrap Core CSS -->
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
