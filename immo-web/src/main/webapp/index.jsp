@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ici Immo</title>
+    <title>Immo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/owl.carousel.css" rel="stylesheet" />
