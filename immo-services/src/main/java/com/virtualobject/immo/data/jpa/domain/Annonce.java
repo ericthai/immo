@@ -42,11 +42,11 @@ public class Annonce implements Serializable {
 		histoEtat = new ArrayList<HistoEtat>();
 	}
 
-	public long getAnnonceId() {
+	public Long getAnnonceId() {
 		return annonceId;
 	}
 
-	public void setAnnonceId(long annonceId) {
+	public void setAnnonceId(Long annonceId) {
 		this.annonceId = annonceId;
 	}
 
