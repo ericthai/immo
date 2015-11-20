@@ -23,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
+import com.virtualobject.immo.data.jpa.AnnonceNotFoundException;
 import com.virtualobject.immo.data.jpa.domain.Annonce;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
 import com.virtualobject.immo.data.jpa.service.AnnonceDaoService;
@@ -58,7 +59,7 @@ public class AnnonceService {
 		return obj;
 	}
 	
-	public AnnonceImmo getOne(long annonceId){
+	public AnnonceImmo getOne(long annonceId) throws AnnonceNotFoundException {
 		AnnonceImmo annonceImmo = annonceDaoService.getOne(annonceId);
 		return annonceImmo;
 	}

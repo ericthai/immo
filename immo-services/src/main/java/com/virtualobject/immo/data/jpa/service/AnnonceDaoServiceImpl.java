@@ -16,6 +16,7 @@
 
 package com.virtualobject.immo.data.jpa.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
+import com.virtualobject.immo.data.jpa.AnnonceNotFoundException;
 import com.virtualobject.immo.data.jpa.domain.Annonce;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
 import com.virtualobject.immo.data.jpa.service.AnnonceRepository;
@@ -61,8 +63,9 @@ class AnnonceDaoServiceImpl implements AnnonceDaoService {
 		return annonceRepository.findAll();
 	}
 
-	public AnnonceImmo getOne(Long id){
-		return this.annonceRepository.getOne(id);
+	public AnnonceImmo getOne(Long id) throws AnnonceNotFoundException {
+		if (this.annonceRepository.exists(id)) return this.annonceRepository.getOne(id);
+		else throw new AnnonceNotFoundException("Annonce Not found");
 	}
 	
 	public AnnonceImmo save(AnnonceImmo annonceImmo){

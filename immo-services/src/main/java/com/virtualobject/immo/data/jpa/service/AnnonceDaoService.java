@@ -21,6 +21,7 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import com.virtualobject.immo.data.jpa.AnnonceNotFoundException;
 import com.virtualobject.immo.data.jpa.domain.Annonce;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
 
@@ -31,16 +32,16 @@ import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
  */
 public interface AnnonceDaoService {
 
-	Page<AnnonceImmo> findAnnonces(AnnonceSearchCriteria criteria,
+	public Page<AnnonceImmo> findAnnonces(AnnonceSearchCriteria criteria,
 			Pageable pageable);
 
-	List<AnnonceImmo> findAll();
+	public List<AnnonceImmo> findAll();
 	
-	AnnonceImmo getOne(Long id);
+	public AnnonceImmo getOne(Long id) throws AnnonceNotFoundException ;
 	
-	AnnonceImmo save(AnnonceImmo annonceImmo);
+	public AnnonceImmo save(AnnonceImmo annonceImmo);
 	
-	void deleteById(Long id);
+	public void deleteById(Long id);
 	
 	//Annonce getAnnonce(String critere);
 

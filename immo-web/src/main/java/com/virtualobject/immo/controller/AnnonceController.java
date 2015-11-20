@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +17,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.virtualobject.immo.data.jpa.AnnonceNotFoundException;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
 import com.virtualobject.immo.services.AnnonceService;
-import com.virtualobject.immo.web.AnnonceNotFoundException;
+//import com.virtualobject.immo.web.AnnonceNotFoundException;
 import com.virtualobject.immo.web.ImmoRuntimeException;
 
 @Controller
@@ -35,11 +37,12 @@ public class AnnonceController {
 	}
 
 	@RequestMapping("/annonces/annonce")
+	@Transactional
 	public String updateAnnonce(@RequestParam(value = "annonceId", required = true, defaultValue = "") Long annonceId,
-			@RequestParam(value = "titre", required = false) String titre, Map<String, Object> model) {
+			@RequestParam(value = "titre", required = false) String titre, Map<String, Object> model) throws AnnonceNotFoundException {
 
 		AnnonceImmo annonceImmo = annonceService.getOne(annonceId);
-		if (annonceImmo != null)
+		if (annonceImmo == null)
 			throw new AnnonceNotFoundException("identifiant d'annonce pas trouvée : " + annonceId);
 		annonceImmo.setTitre(titre);
 		AnnonceImmo annonceImmonew = (AnnonceImmo) annonceService.save(annonceImmo);
@@ -47,7 +50,7 @@ public class AnnonceController {
 		return "./annonce.jsp";
 	}
 
-	@ExceptionHandler(ImmoRuntimeException.class)
+	@ExceptionHandler({RuntimeException.class})
 	public ModelAndView handleError(HttpServletRequest req, Exception exception) {
 		ModelAndView model = new ModelAndView();
 		model.addObject("exception", exception.getMessage());
