@@ -11,6 +11,7 @@
 	</parent>
 	
 	<!--
+	
 	GENERATION du fichier SQL pour MySQL :
 	mvn hibernate4:export
 	le fichier se trouve dans target 

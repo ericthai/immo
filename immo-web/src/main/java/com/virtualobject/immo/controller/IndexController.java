@@ -1,3 +1,4 @@
+
 package com.virtualobject.immo.controller;
 
 import java.util.List;
@@ -26,3 +27,4 @@ public class IndexController {
 	}
 	
 }
+
