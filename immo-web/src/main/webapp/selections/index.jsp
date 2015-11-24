@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ici Immo 2222222000 LOCAL</title>
+    <title>Ici LOCAL</title>
 
 
     <!-- Bootstrap Core CSS -->
@@ -25,6 +25,11 @@
     <link href="css/heroic-features.css" rel="stylesheet" />
     <link href="style/style.css" rel="stylesheet" />
     <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/heroic-features.css" rel="stylesheet" />
     <link href="style/style.css" rel="stylesheet" />
