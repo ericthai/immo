@@ -157,7 +157,7 @@
 									Prix : ${annonce.getBienImmo().getPrix()}
 								</div>
 								<div class="description">
-									Détail...
+									DÃ©tail...
 								</div>
 							</div>
 						</c:forEach>
@@ -280,9 +280,9 @@
 						</div>
 						<div class="row text-valign-top">
 							<div class="col-xs-6  col-sm-6 col-md-6">
-								<a href="mailto:#">Mot de passe oublié</a>
+								<a href="mailto:#">Mot de passe oubliÃ©</a>
 								<br>
-								<a href="mailto:#">Créer un compte</a>
+								<a href="mailto:#">CrÃ©er un compte</a>
 							</div>
 							<div class="col-xs-6  col-sm-6 col-md-6">
 								<button type="submit" class="btn btn-primary btn-block">Rechercher</button>
