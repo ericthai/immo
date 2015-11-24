@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ici Immo 1000</title>
+    <title>Ici Immo 1000 LOCAL</title>
 
 
     <!-- Bootstrap Core CSS -->
