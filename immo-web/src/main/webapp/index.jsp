@@ -4,14 +4,16 @@
 
 <head>
 
-    <meta charset="UTF-8">
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+	<!-- eric : modif local 6  --> 
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ici Immo 1000</title>
-
+    <title>Immo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/owl.carousel.css" rel="stylesheet" />
@@ -90,7 +92,11 @@
 							<label for="inputEmail3" class="col-sm-3 blocEstimationLabel">Type de bien :</label>
 							<div class="col-sm-9">
 								<select class="form-control">
-									<%@include file="components/compTypeBiens.jsp" %>
+									<option value="one">One</option>
+									<option value="two">Two</option>
+									<option value="three">Three</option>
+									<option value="four">Four</option>
+									<option value="five">Five</option>
 								</select>
 							</div>
 						</div>
@@ -98,13 +104,13 @@
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-3 blocEstimationLabel">Adresse :</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="inputEmail3" placeholder="Adresse">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Adresse">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-3 blocEstimationLabel">Code postal :</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="inputPassword3" placeholder="Code Postal">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
 							</div>
 						</div>
 						<div class="form-group">
@@ -127,6 +133,12 @@
             <div class="col-lg-4 col-lg-offset-2">
                 <h3>
                 Later
+<!-- 
+					<c:set var="annonces" scope="request" value="${annonces}"/>
+					<c:forEach var="annonce" items="${annonces}">
+					    <h3>${annonce.description} ${annonce.etatCourant} </h3>
+					</c:forEach>
+ -->             
                 </h3>
             </div>
         </div> 
@@ -138,12 +150,10 @@
 		<div class="container selection"> 
 		
 			<div class="row"> 	 
-<!--
 				<div class="col-lg-1">
-					<a class="btn prev"><img src="images/btn_prev.png" alt="" width="50%" border="1"></a>	
+					<a class="btn prev"><img src="images/btn_prev.png" alt="Tigre" width="30%" border="1"></a>	
 				</div>
--->
-				<div class="col-lg-12">
+				<div class="col-lg-10">
 					<div id="owl-demo" class="owl-carousel">
 						<c:set var="annonces" scope="request" value="${annonces}"/>
 						<c:forEach var="annonce" items="${annonces}">
@@ -158,18 +168,27 @@
 									Prix : ${annonce.getBienImmo().getPrix()}
 								</div>
 								<div class="description">
-									Détail...
+									DÃ©tail...
 								</div>
 							</div>
 						</c:forEach>
 					</div>
 				</div>
-<!--
 				<div class="col-lg-1">
-					<a class="btn next"><img src="images/btn_next.png" alt="" width="50%" border="1"></a>					
+					<a class="btn next"><img src="images/btn_next.png" alt="Tigre" width="30%" border="1"></a>					
 				</div>
--->
 			</div> 	
+			<!--
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-4">					
+					<a class="btn prev"><img src="images/btn_prev.png" alt="Tigre" width="30%" border="1"></a>	
+				</div>
+				<div class="col-lg-6">
+					<a class="btn next"><img src="images/btn_next.png" alt="Tigre" width="30%" border="1"></a>					
+				</div>	
+			</div>
+			-->	
+			
 		</div>	
 	</div>	
 
@@ -200,16 +219,24 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<select class="form-control" id="typeBiens" name="typeBiens">
-									<%@include file="components/compTypeBiens.jsp" %>									
+								<select class="form-control">
+									<option value="one">One</option>
+									<option value="two">Two</option>
+									<option value="three">Three</option>
+									<option value="four">Four</option>
+									<option value="five">Five</option>
 								</select>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<input type="text" class="form-control" id="inputEmail3" placeholder="Adresse">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Adresse">
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<select class="form-control" id="nbPieces" name="nbPieces">
-									<%@include file="components/compBnPieces.jsp" %>									
+								<select class="form-control">
+									<option value="one">One</option>
+									<option value="two">Two</option>
+									<option value="three">Three</option>
+									<option value="four">Four</option>
+									<option value="five">Five</option>
 								</select>
 							</div>
 						</div>
@@ -227,10 +254,16 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<input type="text" class="form-control" id="inputEmail3" placeholder="Surface min">
+								<select class="form-control">
+									<option value="one">One</option>
+									<option value="two">Two</option>
+									<option value="three">Three</option>
+									<option value="four">Four</option>
+									<option value="five">Five</option>
+								</select>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
-								<input type="text" class="form-control" id="inputEmail3" placeholder="Budget max">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Adresse">
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4">
 								<button type="submit" class="btn btn-danger btn-block">Rechercher</button>
@@ -283,9 +316,9 @@
 						</div>
 						<div class="row text-valign-top">
 							<div class="col-xs-6  col-sm-6 col-md-6">
-								<a href="mailto:#">Mot de passe oublié</a>
+								<a href="mailto:#">Mot de passe oubliÃƒÂ©</a>
 								<br>
-								<a href="mailto:#">Créer un compte</a>
+								<a href="mailto:#">CrÃƒÂ©er un compte</a>
 							</div>
 							<div class="col-xs-6  col-sm-6 col-md-6">
 								<button type="submit" class="btn btn-primary btn-block">Rechercher</button>

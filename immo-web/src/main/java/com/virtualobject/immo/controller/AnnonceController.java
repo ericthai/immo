@@ -1,5 +1,6 @@
 package com.virtualobject.immo.controller;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.virtualobject.immo.data.jpa.AnnonceNotFoundException;
 import com.virtualobject.immo.data.jpa.domain.AnnonceImmo;
+import com.virtualobject.immo.data.jpa.domain.BienImmo;
 import com.virtualobject.immo.services.AnnonceService;
 //import com.virtualobject.immo.web.AnnonceNotFoundException;
 import com.virtualobject.immo.web.ImmoRuntimeException;
@@ -36,7 +38,21 @@ public class AnnonceController {
 		return "annonces.jsp";
 	}
 
-	@RequestMapping("/annonces/annonce")
+	@RequestMapping(value="/annonces/annonce", method=RequestMethod.POST)
+	public String createAnnonce(Map<String, Object> model){
+		AnnonceImmo annonceImmo = new AnnonceImmo();
+		annonceImmo.setDateCreationAnnonce(new Date());
+		annonceImmo.setTitre("titre");
+		BienImmo bienImmo = new BienImmo();
+		bienImmo.setCave(true);
+		annonceImmo.setBienImmo(bienImmo);
+		annonceService.save(annonceImmo);
+		model.put("annonce", annonceImmo);
+		return "./annonce.jsp";
+	}
+	
+	
+	@RequestMapping(value="/annonces/annonce", method=RequestMethod.GET)
 	@Transactional
 	public String updateAnnonce(@RequestParam(value = "annonceId", required = true, defaultValue = "") Long annonceId,
 			@RequestParam(value = "titre", required = false) String titre, Map<String, Object> model) throws AnnonceNotFoundException {

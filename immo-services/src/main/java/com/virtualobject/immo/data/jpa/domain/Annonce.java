@@ -11,14 +11,20 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToMany;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.TypeDef;
+
+import com.virtualobject.immo.data.jpa.AnnonceBusinessObject;
+
 @MappedSuperclass
 public class Annonce implements Serializable {
 
 	private static final long serialVersionUID = -6493653477564612327L;
 
 	@Id
-	@GeneratedValue
-	private Long annonceId;
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	private String annonceId;
 
 	private String referenceAnnonce;
 	private Date dateCreationAnnonce;
@@ -35,18 +41,16 @@ public class Annonce implements Serializable {
 
 	private String clientId;
 
-	private AnnonceBusinessObject annonceBusinessObject;
-
 	public Annonce() {
 		dateCreationAnnonce = new Date();
 		histoEtat = new ArrayList<HistoEtat>();
 	}
 
-	public Long getAnnonceId() {
+	public String getAnnonceId() {
 		return annonceId;
 	}
 
-	public void setAnnonceId(Long annonceId) {
+	public void setAnnonceId(String annonceId) {
 		this.annonceId = annonceId;
 	}
 
@@ -108,14 +112,6 @@ public class Annonce implements Serializable {
 		histoEtat1.setDateEtat(new Date());
 		histoEtat1.setEtat(etatCourant);
 		getHistoEtat().add(histoEtat1);
-	}
-
-	public AnnonceBusinessObject getAnnonceBusinessObject() {
-		return annonceBusinessObject;
-	}
-
-	public void setAnnonceBusinessObject(AnnonceBusinessObject annonceBusinessObject) {
-		this.annonceBusinessObject = annonceBusinessObject;
 	}
 
 	public String getClientId() {

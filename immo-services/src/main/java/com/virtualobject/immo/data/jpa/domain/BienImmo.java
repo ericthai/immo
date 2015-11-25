@@ -14,11 +14,20 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import com.virtualobject.immo.data.jpa.AnnonceBusinessObject;
+
 @Entity
 @Table(name = "BIENS")
-public class BienImmo extends AnnonceBusinessObject implements Serializable {
+public class BienImmo implements AnnonceBusinessObject {
 
 	private static final long serialVersionUID = 3803855141876874576L;
+
+	@Id
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	private String bienImmoId;
 
 	@Column(length = 60)
 	private String typeBien;
@@ -244,6 +253,14 @@ public class BienImmo extends AnnonceBusinessObject implements Serializable {
 
 	public void setPhotos(List<PhotoBienImmo> photos) {
 		this.photos = photos;
+	}
+
+	public String getBienImmoId() {
+		return bienImmoId;
+	}
+
+	public void setBienImmoId(String bienImmoId) {
+		this.bienImmoId = bienImmoId;
 	}
 
 }
